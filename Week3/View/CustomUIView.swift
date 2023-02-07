@@ -37,6 +37,7 @@ class CustomView: UIView {
         }
     }
 }
+
 extension UIView {
     func makeRightSideRoundCorners() {
         clipsToBounds = true

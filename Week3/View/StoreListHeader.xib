@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="StoreListHeader" id="iN0-l3-epB" customClass="StoreListHeader" customModule="Week3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsH-gn-0Fl">
+                    <rect key="frame" x="0.0" y="0.0" width="194" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="광고" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p64-fS-oe1">
+                            <rect key="frame" x="78.666666666666671" y="21" width="24.333333333333329" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.21148681640625" green="0.21148681640625" blue="0.21148681640625" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오픈리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ix-mP-EUw">
+                            <rect key="frame" x="14.999999999999996" y="21" width="60.666666666666657" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="67o-v8-oWD">
+                            <rect key="frame" x="105" y="19.333333333333336" width="19.333333333333329" height="17.999999999999993"/>
+                            <color key="tintColor" red="0.30524902343750004" green="0.30524902343750004" blue="0.30524902343750004" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" weight="regular"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="p64-fS-oe1" firstAttribute="centerY" secondItem="2ix-mP-EUw" secondAttribute="centerY" id="2k7-fe-Luc"/>
+                        <constraint firstItem="2ix-mP-EUw" firstAttribute="leading" secondItem="lsH-gn-0Fl" secondAttribute="leading" constant="15" id="38P-Im-jlq"/>
+                        <constraint firstItem="67o-v8-oWD" firstAttribute="bottom" secondItem="p64-fS-oe1" secondAttribute="bottom" id="4up-Rr-cl5"/>
+                        <constraint firstItem="p64-fS-oe1" firstAttribute="leading" secondItem="2ix-mP-EUw" secondAttribute="trailing" constant="3" id="7d2-GX-ev3"/>
+                        <constraint firstItem="67o-v8-oWD" firstAttribute="leading" secondItem="p64-fS-oe1" secondAttribute="trailing" constant="2" id="QEx-Up-d21"/>
+                        <constraint firstAttribute="bottom" secondItem="2ix-mP-EUw" secondAttribute="bottom" constant="10" id="Te1-Cl-N8d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+            <constraints>
+                <constraint firstItem="lsH-gn-0Fl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZGo-Rt-6ZT"/>
+                <constraint firstItem="lsH-gn-0Fl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bVW-bR-c0B"/>
+                <constraint firstAttribute="bottom" secondItem="lsH-gn-0Fl" secondAttribute="bottom" id="qDX-Fd-ZMM"/>
+                <constraint firstAttribute="trailing" secondItem="lsH-gn-0Fl" secondAttribute="trailing" id="yBk-GG-hgT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-99.236641221374043" y="-202.11267605633805"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="questionmark.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

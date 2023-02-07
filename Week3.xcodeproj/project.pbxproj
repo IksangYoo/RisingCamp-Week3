@@ -17,6 +17,10 @@
 		DD5D3AB72991D46700D036AF /* JokbalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5D3AB62991D46700D036AF /* JokbalViewController.swift */; };
 		DD5D3AB92991D47500D036AF /* SoupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5D3AB82991D47500D036AF /* SoupViewController.swift */; };
 		DDF7A46A2991E7C80081B552 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A4692991E7C80081B552 /* CustomUIView.swift */; };
+		DDF7A46E299233BC0081B552 /* StoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A46C299233BC0081B552 /* StoreListTableViewCell.swift */; };
+		DDF7A46F299233BC0081B552 /* StoreListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF7A46D299233BC0081B552 /* StoreListTableViewCell.xib */; };
+		DDF7A47729924CA30081B552 /* StoreListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A47629924CA30081B552 /* StoreListHeader.swift */; };
+		DDF7A47929924CC10081B552 /* StoreListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF7A47829924CC10081B552 /* StoreListHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		DD5D3AB62991D46700D036AF /* JokbalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokbalViewController.swift; sourceTree = "<group>"; };
 		DD5D3AB82991D47500D036AF /* SoupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoupViewController.swift; sourceTree = "<group>"; };
 		DDF7A4692991E7C80081B552 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		DDF7A46C299233BC0081B552 /* StoreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListTableViewCell.swift; sourceTree = "<group>"; };
+		DDF7A46D299233BC0081B552 /* StoreListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreListTableViewCell.xib; sourceTree = "<group>"; };
+		DDF7A47629924CA30081B552 /* StoreListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListHeader.swift; sourceTree = "<group>"; };
+		DDF7A47829924CC10081B552 /* StoreListHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreListHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				DDF7A4692991E7C80081B552 /* CustomUIView.swift */,
+				DDF7A46C299233BC0081B552 /* StoreListTableViewCell.swift */,
+				DDF7A46D299233BC0081B552 /* StoreListTableViewCell.xib */,
+				DDF7A47629924CA30081B552 /* StoreListHeader.swift */,
+				DDF7A47829924CC10081B552 /* StoreListHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +191,8 @@
 				DD5D3AAC2991BC9B00D036AF /* LaunchScreen.storyboard in Resources */,
 				DD5D3AA92991BC9B00D036AF /* Assets.xcassets in Resources */,
 				DD5D3AA72991BC9A00D036AF /* Main.storyboard in Resources */,
+				DDF7A47929924CC10081B552 /* StoreListHeader.xib in Resources */,
+				DDF7A46F299233BC0081B552 /* StoreListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF7A46E299233BC0081B552 /* StoreListTableViewCell.swift in Sources */,
 				DD5D3AB52991C7B800D036AF /* StoreListViewController.swift in Sources */,
+				DDF7A47729924CA30081B552 /* StoreListHeader.swift in Sources */,
 				DDF7A46A2991E7C80081B552 /* CustomUIView.swift in Sources */,
 				DD5D3AA02991BC9A00D036AF /* AppDelegate.swift in Sources */,
 				DD5D3AB92991D47500D036AF /* SoupViewController.swift in Sources */,

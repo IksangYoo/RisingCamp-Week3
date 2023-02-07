@@ -8,22 +8,47 @@
 import UIKit
 
 class JokbalViewController: UIViewController {
-
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: "StoreListTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "storeListCell")
+        
+        let headerNib = UINib(nibName: "StoreListHeader", bundle: nil)
+        tableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "StoreListHeader")
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension JokbalViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if (section == 0) {
+            return 3
+        } else {
+            return 10
+        }
+        
     }
-    */
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "storeListCell", for: indexPath) as? StoreListTableViewCell else {
+            return UITableViewCell()
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "StoreListHeader") as! StoreListHeader
+        
+        return header
+    }
 
 }

@@ -107,8 +107,6 @@ extension StoreListViewController: PageboyViewControllerDataSource, TMBarDataSou
         bar.indicator.overscrollBehavior = .none
         bar.indicator.tintColor = .black
         bar.indicator.transitionStyle = .none
-        bar.indicator.frame.width
-        
         
         addBar(bar, dataSource: self, at: .custom(view: categoryView, layout: nil))
     }
