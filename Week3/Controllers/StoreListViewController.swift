@@ -21,6 +21,17 @@ class StoreListViewController: TabmanViewController {
         tabBarLayout()
         categoryView.layer.addBorder([.bottom], color: .gray, width: 0.3)
         sortView.makeRightSideRoundCorners()
+
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
+        backBarButtonItem.tintColor = .black
+        self.navigationItem.backBarButtonItem = backBarButtonItem
+        
+        //네비게이션 배경, 구분선 색상 변경 -- 스크롤시 색깔 바뀌는걸 원치 않을때 사용
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.backgroundColor = .white
+        navigationBarAppearance.shadowColor = .white
+        navigationController!.navigationBar.standardAppearance = navigationBarAppearance
+        navigationController!.navigationBar.scrollEdgeAppearance = navigationBarAppearance
     }
 }
 

@@ -17,10 +17,12 @@ class JokbalViewController: UIViewController {
         
         let headerNib = UINib(nibName: "StoreListHeader", bundle: nil)
         tableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "StoreListHeader")
+        
     }
 }
 
 extension JokbalViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -34,6 +36,10 @@ extension JokbalViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToSelectMenuVC", sender: nil)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "storeListCell", for: indexPath) as? StoreListTableViewCell else {
             return UITableViewCell()

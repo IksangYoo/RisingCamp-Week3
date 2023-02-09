@@ -21,6 +21,15 @@
 		DDF7A46F299233BC0081B552 /* StoreListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF7A46D299233BC0081B552 /* StoreListTableViewCell.xib */; };
 		DDF7A47729924CA30081B552 /* StoreListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A47629924CA30081B552 /* StoreListHeader.swift */; };
 		DDF7A47929924CC10081B552 /* StoreListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF7A47829924CC10081B552 /* StoreListHeader.xib */; };
+		DDF7A47D29934DE60081B552 /* SelectMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A47C29934DE60081B552 /* SelectMenuViewController.swift */; };
+		DDF7A48F299486880081B552 /* SelectMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A48D299486880081B552 /* SelectMenuTableViewCell.swift */; };
+		DDF7A490299486880081B552 /* SelectMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF7A48E299486880081B552 /* SelectMenuTableViewCell.xib */; };
+		DDF7A49229948B6F0081B552 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A49129948B6F0081B552 /* CustomImageView.swift */; };
+		DDF7A4942994BF330081B552 /* SelectMenuTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A4932994BF330081B552 /* SelectMenuTableViewHeader.swift */; };
+		DDF7A4962994BF3C0081B552 /* SelectMenuTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF7A4952994BF3C0081B552 /* SelectMenuTableViewHeader.xib */; };
+		DDF7A49D2994C3F80081B552 /* SecondSelectMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A49B2994C3F80081B552 /* SecondSelectMenuTableViewCell.swift */; };
+		DDF7A49E2994C3F80081B552 /* SecondSelectMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF7A49C2994C3F80081B552 /* SecondSelectMenuTableViewCell.xib */; };
+		DDF7A4A12994D23A0081B552 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7A4A02994D23A0081B552 /* MenuModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +51,15 @@
 		DDF7A46D299233BC0081B552 /* StoreListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreListTableViewCell.xib; sourceTree = "<group>"; };
 		DDF7A47629924CA30081B552 /* StoreListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListHeader.swift; sourceTree = "<group>"; };
 		DDF7A47829924CC10081B552 /* StoreListHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreListHeader.xib; sourceTree = "<group>"; };
+		DDF7A47C29934DE60081B552 /* SelectMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuViewController.swift; sourceTree = "<group>"; };
+		DDF7A48D299486880081B552 /* SelectMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuTableViewCell.swift; sourceTree = "<group>"; };
+		DDF7A48E299486880081B552 /* SelectMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMenuTableViewCell.xib; sourceTree = "<group>"; };
+		DDF7A49129948B6F0081B552 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		DDF7A4932994BF330081B552 /* SelectMenuTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuTableViewHeader.swift; sourceTree = "<group>"; };
+		DDF7A4952994BF3C0081B552 /* SelectMenuTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMenuTableViewHeader.xib; sourceTree = "<group>"; };
+		DDF7A49B2994C3F80081B552 /* SecondSelectMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSelectMenuTableViewCell.swift; sourceTree = "<group>"; };
+		DDF7A49C2994C3F80081B552 /* SecondSelectMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondSelectMenuTableViewCell.xib; sourceTree = "<group>"; };
+		DDF7A4A02994D23A0081B552 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +103,7 @@
 		DD5D3A9E2991BC9A00D036AF /* Week3 */ = {
 			isa = PBXGroup;
 			children = (
+				DDF7A49F2994D2110081B552 /* Model */,
 				DDF7A4682991E7B40081B552 /* View */,
 				DD5D3AB32991C7A700D036AF /* Controllers */,
 				DD5D3A9F2991BC9A00D036AF /* AppDelegate.swift */,
@@ -103,6 +122,7 @@
 				DD5D3AB42991C7B800D036AF /* StoreListViewController.swift */,
 				DD5D3AB62991D46700D036AF /* JokbalViewController.swift */,
 				DD5D3AB82991D47500D036AF /* SoupViewController.swift */,
+				DDF7A47C29934DE60081B552 /* SelectMenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,13 +130,44 @@
 		DDF7A4682991E7B40081B552 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DDF7A480299485930081B552 /* SelectMenuTableView */,
+				DDF7A47F2994851C0081B552 /* StoreListTableView */,
 				DDF7A4692991E7C80081B552 /* CustomUIView.swift */,
+				DDF7A49129948B6F0081B552 /* CustomImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDF7A47F2994851C0081B552 /* StoreListTableView */ = {
+			isa = PBXGroup;
+			children = (
 				DDF7A46C299233BC0081B552 /* StoreListTableViewCell.swift */,
 				DDF7A46D299233BC0081B552 /* StoreListTableViewCell.xib */,
 				DDF7A47629924CA30081B552 /* StoreListHeader.swift */,
 				DDF7A47829924CC10081B552 /* StoreListHeader.xib */,
 			);
-			path = View;
+			path = StoreListTableView;
+			sourceTree = "<group>";
+		};
+		DDF7A480299485930081B552 /* SelectMenuTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF7A48D299486880081B552 /* SelectMenuTableViewCell.swift */,
+				DDF7A48E299486880081B552 /* SelectMenuTableViewCell.xib */,
+				DDF7A4932994BF330081B552 /* SelectMenuTableViewHeader.swift */,
+				DDF7A4952994BF3C0081B552 /* SelectMenuTableViewHeader.xib */,
+				DDF7A49B2994C3F80081B552 /* SecondSelectMenuTableViewCell.swift */,
+				DDF7A49C2994C3F80081B552 /* SecondSelectMenuTableViewCell.xib */,
+			);
+			path = SelectMenuTableView;
+			sourceTree = "<group>";
+		};
+		DDF7A49F2994D2110081B552 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDF7A4A02994D23A0081B552 /* MenuModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EC356B0575E198B305BA81EB /* Pods */ = {
@@ -189,9 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5D3AAC2991BC9B00D036AF /* LaunchScreen.storyboard in Resources */,
+				DDF7A4962994BF3C0081B552 /* SelectMenuTableViewHeader.xib in Resources */,
+				DDF7A49E2994C3F80081B552 /* SecondSelectMenuTableViewCell.xib in Resources */,
 				DD5D3AA92991BC9B00D036AF /* Assets.xcassets in Resources */,
 				DD5D3AA72991BC9A00D036AF /* Main.storyboard in Resources */,
 				DDF7A47929924CC10081B552 /* StoreListHeader.xib in Resources */,
+				DDF7A490299486880081B552 /* SelectMenuTableViewCell.xib in Resources */,
 				DDF7A46F299233BC0081B552 /* StoreListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,8 +302,14 @@
 				DDF7A46E299233BC0081B552 /* StoreListTableViewCell.swift in Sources */,
 				DD5D3AB52991C7B800D036AF /* StoreListViewController.swift in Sources */,
 				DDF7A47729924CA30081B552 /* StoreListHeader.swift in Sources */,
+				DDF7A49D2994C3F80081B552 /* SecondSelectMenuTableViewCell.swift in Sources */,
+				DDF7A4942994BF330081B552 /* SelectMenuTableViewHeader.swift in Sources */,
+				DDF7A47D29934DE60081B552 /* SelectMenuViewController.swift in Sources */,
 				DDF7A46A2991E7C80081B552 /* CustomUIView.swift in Sources */,
 				DD5D3AA02991BC9A00D036AF /* AppDelegate.swift in Sources */,
+				DDF7A48F299486880081B552 /* SelectMenuTableViewCell.swift in Sources */,
+				DDF7A49229948B6F0081B552 /* CustomImageView.swift in Sources */,
+				DDF7A4A12994D23A0081B552 /* MenuModel.swift in Sources */,
 				DD5D3AB92991D47500D036AF /* SoupViewController.swift in Sources */,
 				DD5D3AA22991BC9A00D036AF /* SceneDelegate.swift in Sources */,
 				DD5D3AB72991D46700D036AF /* JokbalViewController.swift in Sources */,
