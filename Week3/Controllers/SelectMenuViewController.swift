@@ -28,6 +28,10 @@ class SelectMenuViewController: UIViewController {
 
         let headerNib = UINib(nibName: "SelectMenuTableViewHeader", bundle: nil)
         tableView2.register(headerNib, forHeaderFooterViewReuseIdentifier: "SelectMenuTableViewHeader")
+        
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
+        backBarButtonItem.tintColor = .black
+        self.navigationItem.backBarButtonItem = backBarButtonItem
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let optionVc = segue.destination as! OptionsViewController
