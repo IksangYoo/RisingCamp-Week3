@@ -100,7 +100,7 @@ class SecondSelectMenuTableViewCell: UITableViewCell {
         priceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 23).isActive = true
         priceLabel.topAnchor.constraint(equalTo: captionLable.bottomAnchor, constant: 5).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -15).isActive = true
-        priceLabel.text = menu.price
+        priceLabel.text = menu.priceText
     }
     
     func sideMenuUI(_ menu: MenuModel) {
@@ -118,7 +118,7 @@ class SecondSelectMenuTableViewCell: UITableViewCell {
         priceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 23).isActive = true
         priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -15).isActive = true
-        priceLabel.text = menu.price
+        priceLabel.text = menu.priceText
     }
     
     func drinkMenuUI(_ menu: MenuModel) {
@@ -137,7 +137,7 @@ class SecondSelectMenuTableViewCell: UITableViewCell {
         priceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 23).isActive = true
         priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -15).isActive = true
-        priceLabel.text = menu.price
+        priceLabel.text = menu.priceText
         
         imageViewOf19.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 5).isActive = true
         imageViewOf19.topAnchor.constraint(equalTo: view.topAnchor, constant: 23).isActive = true

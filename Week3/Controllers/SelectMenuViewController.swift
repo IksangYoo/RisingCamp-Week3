@@ -12,6 +12,7 @@ class SelectMenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableView2: UITableView!
     let model = MenuModel()
+    var selectedMenu = MenuModel()
 //    var hiddenSections = Set<Int>()
 //    var indexPaths = [IndexPath]()
    
@@ -27,6 +28,11 @@ class SelectMenuViewController: UIViewController {
 
         let headerNib = UINib(nibName: "SelectMenuTableViewHeader", bundle: nil)
         tableView2.register(headerNib, forHeaderFooterViewReuseIdentifier: "SelectMenuTableViewHeader")
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let optionVc = segue.destination as! OptionsViewController
+        optionVc.menu = selectedMenu
+        
     }
     
 }
@@ -69,6 +75,26 @@ extension SelectMenuViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             return 0
         }
+    }
+    
+  
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView == self.tableView {
+            selectedMenu = model.read(at: indexPath.row, type: .favorite)
+        } else {
+            if indexPath.section == 0 {
+                selectedMenu = model.read(at: indexPath.row, type: .main)
+            } else if indexPath.section == 1 {
+                selectedMenu = model.read(at: indexPath.row, type: .side)
+            } else if indexPath.section == 2 {
+                selectedMenu = model.read(at: indexPath.row, type: .drink)
+            }
+            print(indexPath.section)
+        }
+        
+        performSegue(withIdentifier: "goToOptions", sender: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

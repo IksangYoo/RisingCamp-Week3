@@ -27,7 +27,7 @@ class SelectMenuTableViewCell: UITableViewCell {
     func updateCell(menu: MenuModel) {
         captionLabel.text = menu.caption
         foodImage.image = menu.image
-        priceLabel.text = menu.price
+        priceLabel.text = menu.priceText
         nameLabel.text = menu.name
     }
     
