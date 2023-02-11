@@ -36,11 +36,9 @@ struct MenuModel {
     var price: Int?
     var priceInfo: [String:Int] = ["":0]
     
-
     func read(at: Int, type: ModelType) -> MenuModel {
         return type.models[at]
     }
-    
     
     func numberFormatter(number: Int) -> String {
         let numberFormatter = NumberFormatter()

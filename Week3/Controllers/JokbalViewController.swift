@@ -9,6 +9,8 @@ import UIKit
 
 class JokbalViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    let storeTitle = ["냠냠족발&보쌈","미스터보쌈5379","가장맛있는족발"]
+    let storeImage = [UIImage(named: "store1"),UIImage(named: "store2"),UIImage(named: "store3")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,7 @@ extension JokbalViewController: UITableViewDelegate, UITableViewDataSource {
         if (section == 0) {
             return 3
         } else {
-            return 10
+            return 3
         }
         
     }
@@ -44,6 +46,8 @@ extension JokbalViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "storeListCell", for: indexPath) as? StoreListTableViewCell else {
             return UITableViewCell()
         }
+        cell.storeImageView.image = storeImage[indexPath.row]
+        cell.storeNameLabel.text = storeTitle[indexPath.row]
         return cell
     }
     
@@ -53,7 +57,9 @@ extension JokbalViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "StoreListHeader") as! StoreListHeader
-        
+        if section == 1 {
+            header.listLabel.text = "울트라콜"
+        }
         return header
     }
 

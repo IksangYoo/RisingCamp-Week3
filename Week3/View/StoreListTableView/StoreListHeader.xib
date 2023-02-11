@@ -55,6 +55,9 @@
                 <constraint firstAttribute="trailing" secondItem="lsH-gn-0Fl" secondAttribute="trailing" id="yBk-GG-hgT"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="listLabel" destination="2ix-mP-EUw" id="Kdz-jp-gS0"/>
+            </connections>
             <point key="canvasLocation" x="-99.236641221374043" y="-202.11267605633805"/>
         </view>
     </objects>

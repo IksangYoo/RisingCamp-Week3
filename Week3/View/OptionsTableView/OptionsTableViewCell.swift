@@ -114,12 +114,8 @@ class OptionsTableViewCell: UITableViewCell {
         imageViewOf19.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 23).isActive = true
     }
     
-//    func updateButtonColor(isSelected: Bool) {
-//        if isSelected {
-//            isSelectedImageView.tintColor = #colorLiteral(red: 0.1570331156, green: 0.7559762597, blue: 0.741653502, alpha: 1)
-//        } else {
-//            isSelectedImageView.tintColor = #colorLiteral(red: 0.8431373239, green: 0.8431373239, blue: 0.8431373239, alpha: 1)
-//        }
-//    }
+    func updateButtonColor() {
+            isSelectedImageView.tintColor = #colorLiteral(red: 0.1570331156, green: 0.7559762597, blue: 0.741653502, alpha: 1)
+    }
 }
 

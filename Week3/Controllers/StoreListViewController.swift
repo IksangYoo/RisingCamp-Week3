@@ -13,6 +13,7 @@ class StoreListViewController: TabmanViewController {
     @IBOutlet weak var categoryView: UIView!
     @IBOutlet weak var sortView: CustomView!
     private var viewControllers: [UIViewController] = []
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()

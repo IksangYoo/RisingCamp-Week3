@@ -42,6 +42,9 @@ class OptionsViewController: UIViewController {
         name.text = menu.name
         foodImageView.image = menu.image
         
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
+        backBarButtonItem.tintColor = .black
+        self.navigationItem.backBarButtonItem = backBarButtonItem
     }
     
     @IBAction func plusButtonClicked(_ sender: UIButton) {
@@ -62,6 +65,9 @@ class OptionsViewController: UIViewController {
         countLabel.text = "\(numofMenu)개"
     }
     
+    @IBAction func addButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToCart", sender: nil)
+    }
     func numberFormatter(number: Int) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
@@ -115,6 +121,7 @@ extension OptionsViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell" ,for: indexPath) as! OptionsTableViewCell
         
         let keySortedDict = menu.priceInfo.sorted(by: {$0.1 < $1.1})
         let keys = keySortedDict.map{$0.1}
@@ -135,6 +142,7 @@ extension OptionsViewController: UITableViewDelegate,UITableViewDataSource {
             } else {
                 alcoholPrice += alcoholMenu[indexPath.row].price!
             }
+            cell.updateButtonColor()
             isAlcoholSelected[indexPath.row] = !isAlcoholSelected[indexPath.row]
         }
         
